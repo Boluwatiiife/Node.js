@@ -10,7 +10,7 @@ const newServer=http.createServer((req,res)=>{//you can store the createServer f
     console.log(numm);
 
     const greet=_.once(()=>{
-        console.log('hello mother')
+        console.log('hello guys')
     });
     greet();
     greet();

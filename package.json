@@ -1,5 +1,28 @@
 {
   "devDependencies": {
     "@types/node": "^20.4.4"
+  },
+  "name": "software",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boluwatiiife/Node.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boluwatiiife/Node.js/issues"
+  },
+  "homepage": "https://github.com/Boluwatiiife/Node.js#readme",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

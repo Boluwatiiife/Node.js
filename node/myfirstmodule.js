@@ -1,3 +1,3 @@
 exports.myDateTime=function(){
-    return Date();
+    return Date()+'. i will do great things in life';
 };

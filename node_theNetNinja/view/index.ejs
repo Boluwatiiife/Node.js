@@ -1,0 +1,25 @@
+<html lang="en">
+    <%- include('partialss/head.ejs')%>
+    <body>
+        
+        <%- include('partialss/nav.ejs')%>
+
+
+        <% const name ='Tunde-lawal Boluwatife' %>
+       
+        <div class="blogs content">
+            <h2>All Blogs</h2>
+            <% if(blogs.length>0){%>
+                <% blogs.forEach(blog=>{%>
+                    <h3 class="title"><%= blog.myTitle%></h3>
+                    <p class="snippet"><%= blog.snippet%></p>
+                <%})%>
+                <%} else{%>
+                    <p>There are no blogs to display, fuck off!!</p>
+                <%}%>    
+            
+        </div>
+        <%- include('partialss/footer.ejs')%>
+
+    </body>
+</html>

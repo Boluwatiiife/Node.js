@@ -1,8 +1,8 @@
 <html lang="en">
-    <%- include('partialss/head.ejs')%>
+    <%- include('../partialss/head.ejs')%>
     <body>
         
-        <%- include('partialss/nav.ejs')%>
+        <%- include('../partialss/nav.ejs')%>
 
 
         <% const name ='Tunde-lawal Boluwatife' %>
@@ -11,15 +11,17 @@
             <h2>All Blogs</h2>
             <% if(blogs.length>0){%>
                 <% blogs.forEach(blog=>{%>
-                    <h3 class="title"><%= blog.myTitle%></h3>
+                <a class="single" href="/blogs/<%= blog._id %>">
+                    <h3 class="title"><%= blog.title%></h3>
                     <p class="snippet"><%= blog.snippet%></p>
+                </a>
                 <%})%>
                 <%} else{%>
                     <p>There are no blogs to display, fuck off!!</p>
                 <%}%>    
             
         </div>
-        <%- include('partialss/footer.ejs')%>
+        <%- include('..//partialss/footer.ejs')%>
 
     </body>
 </html>

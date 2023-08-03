@@ -42,7 +42,7 @@ const boardingBus=(theTime:undefined)=>{
         },4000);
     })
 }
-const gettToLagos=(timee:string)=>{
+const gettToLagoss=(timee:string)=>{
     return new Promise((correct,wrong)=>{
         setTimeout(() => {
             correct(timee);
@@ -89,7 +89,7 @@ getUpp('05:35 AM')
 })
 .then(()=>{
     console.log('the journey was tiring');
-    return gettToLagos('afternoon')
+    return gettToLagoss('afternoon')
 })
 .then(()=>{
     return theNextBus(15);

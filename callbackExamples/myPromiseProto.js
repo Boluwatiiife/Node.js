@@ -41,7 +41,7 @@ var boardingBus = function (theTime) {
         }, 4000);
     });
 };
-var gettToLagos = function (timee) {
+var gettToLagoss = function (timee) {
     return new Promise(function (correct, wrong) {
         setTimeout(function () {
             correct(timee);
@@ -88,7 +88,7 @@ getUpp('05:35 AM')
 })
     .then(function () {
     console.log('the journey was tiring');
-    return gettToLagos('afternoon');
+    return gettToLagoss('afternoon');
 })
     .then(function () {
     return theNextBus(15);
